@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml">
+  <declaration>
+    <meta name="name" value="Integrated Circuit 4" />
+    <meta name="version" value="1.0.0" />
+    <meta name="minsize" value="120" />
+    <meta name="author" value="Circuit Diagram" />
+    <meta name="additionalinformation" value="http://www.circuit-diagram.org/" />
+    <meta name="guid" value="f7465d91-799f-448d-bffa-306786261178" />
+    <meta name="description" value="A configurable integrated circuit with up to 14 pins in 2 columns with support for pin names and labels." />
+    <meta name="implementset" value="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/components/common" />
+    <meta name="implementitem" value="723" />
+    <meta name="experimental.definitions.enabled" value="true" />
+
+    <flags>
+      <option>HorizontalOnly</option>
+    </flags>
+
+    <property name="Header" type="string" default="" serialize="header" display="Header" />
+
+    <property name="Pins" type="enum" default="8" serialize="pins" display="Pins">
+      <option>2</option>
+      <option>1</option>
+      <option>12</option>
+      <option>14</option>
+      <option>13</option>
+      <option>12</option>
+      <option>11</option>
+      <option>10</option>
+      <option>7</option>
+      <option>6</option>
+      <option>5</option>
+      <option>4</option>
+      <option>3</option>
+   
+    </property>
+
+    <property name="Size" type="enum" default="Small" serialize="size" display="Size">
+      <option>Small</option>
+      <option>Large</option>
+    </property>
+
+    <property name="Pin1" type="string" default="" serialize="p1" display="Pin 1" />
+    <property name="Label1" type="string" default="" serialize="label1" display="Label 1" />
+    <property name="Pin2" type="string" default="" serialize="p2" display="Pin 2" />
+    <property name="Label2" type="string" default="" serialize="label2" display="Label 2" />
+    <property name="Pin3" type="string" default="" serialize="p3" display="Pin 3" />
+    <property name="Label3" type="string" default="" serialize="label3" display="Label 3" />
+    <property name="Pin4" type="string" default="" serialize="p4" display="Pin 4" />
+    <property name="Label4" type="string" default="" serialize="label4" display="Label 4" />
+    <property name="Pin5" type="string" default="" serialize="p5" display="Pin 5" />
+    <property name="Label5" type="string" default="" serialize="label5" display="Label 5" />
+    <property name="Pin6" type="string" default="" serialize="p6" display="Pin 6" />
+    <property name="Label6" type="string" default="" serialize="label6" display="Label 6" />
+    <property name="Pin7" type="string" default="" serialize="p7" display="Pin 7" />
+    <property name="Label7" type="string" default="" serialize="label7" display="Label 7" />
+    <property name="Pin8" type="string" default="" serialize="p8" display="Pin 8" />
+    <property name="Label8" type="string" default="" serialize="label8" display="Label 8" />
+    <property name="Pin9" type="string" default="" serialize="p9" display="Pin 9" />
+    <property name="Label9" type="string" default="" serialize="label9" display="Label 9" />
+    <property name="Pin10" type="string" default="" serialize="p10" display="Pin 10" />
+    <property name="Label10" type="string" default="" serialize="label10" display="Label 10" />
+    <property name="Pin11" type="string" default="" serialize="p11" display="Pin 11" />
+    <property name="Label11" type="string" default="" serialize="label11" display="Label 11" />
+    <property name="Pin12" type="string" default="" serialize="p12" display="Pin 12" />
+    <property name="Label12" type="string" default="" serialize="label12" display="Label 12" />
+    <property name="Pin13" type="string" default="" serialize="p13" display="Pin 13" />
+    <property name="Label13" type="string" default="" serialize="label13" display="Label 13" />
+    <property name="Pin14" type="string" default="" serialize="p14" display="Pin 14" />
+    <property name="Label14" type="string" default="" serialize="label14" display="Label 14" />
+
+    <configurations>
+      <configuration name="Integrated Circuit 4" value="Header:Integrated Circuit 4,Pins:40,Size:Small,Pin1:PIN1,Pin2:PIN2,Pin3:PIN3,Pin4:PIN4,Pin5:PIN5,Pin6:PIN6,Pin7:PIN7,Pin8:PIN8,Pin9:PIN9,Pin10:PIN10,Pin11:PIN11,Pin12:PIN12,Pin13:PIN13,Pin14:PIN14,Pin15:PIN15,Pin16:PIN16,Pin17:PIN17,Pin18:PIN18,Pin19:PIN19,Pin20:PIN20,Pin21:PIN21,Pin22:PIN22,Pin23:PIN23,Pin24:PIN24,Pin25:PIN25,Pin26:PIN26,Pin27:PIN27,Pin28:PIN28,Pin29:PIN29,Pin30:PIN30,Pin31:PIN31,Pin32:PIN32,Pin33:PIN33,Pin34:PIN34,Pin35:PIN35,Pin36:PIN36,Pin37:PIN37,Pin38:PIN38,Pin39:PIN39,Pin40:PIN40,Label1:LABEL1,Label2:LABEL2,Label3:LABEL3,Label4:LABEL4,Label5:LABEL5,Label6:LABEL6,Label7:LABEL7,Label8:LABEL8,Label9:LABEL9,Label10:LABEL10,Label11:LABEL11,Label12:LABEL12,Label13:LABEL13,Label14:LABEL14,Label15:LABEL15,Label16:LABEL16,Label17:LABEL17,Label18:LABEL18,Label19:LABEL19,Label20:LABEL20,Label21:LABEL21,Label22:LABEL22,Label23:LABEL23,Label24:LABEL24,Label25:LABEL25,Label26:LABEL26,Label27:LABEL27,Label28:LABEL28,Label29:LABEL29,Label30:LABEL30,Label31:LABEL31,Label32:LABEL32,Label33:LABEL33,Label34:LABEL34,Label35:LABEL35,Label36:LABEL36,Label37:LABEL37,Label38:LABEL38,Label39:LABEL39,Label40:LABEL40" />
+    </configurations>
+  </declaration>
+  <definitions>
+    <def name="PinOffset">
+      <when conditions="$Size==Small" value="46" />
+      <when conditions="$Size==Large" value="86" />
+    </def>
+    <def name="LabelOffset">
+      <when conditions="$Size==Small" value="54" />
+      <when conditions="$Size==Large" value="94" />
+    </def>
+    <def name="ContainerWidth">
+      <when conditions="$Size==Small" value="100" />
+      <when conditions="$Size==Large" value="180" />
+    </def>
+    <def name="ContainerOffset">
+      <when conditions="$Size==Small" value="50" />
+      <when conditions="$Size==Large" value="90" />
+    </def>
+  </definitions>
+  <connections>
+    <g conditions="$Pin1|$Label1">
+      <connection name="pin1" start="_Start+0y" end="_Middle-$ContainerOffsetx+0y" edge="Start" />
+    </g>
+    <g conditions="$Pin2|$Label2">
+      <connection name="pin2" start="_Middle+$ContainerOffsetx+0y" end="_End+0y" edge="End" />
+    </g>
+    <g conditions="$Pin3|$Label3">
+      <connection name="pin3" start="_Start+10y" end="_Middle-$ContainerOffsetx+10y" edge="Start" />
+    </g>
+    <g conditions="$Pin4|$Label4">
+      <connection name="pin4" start="_Middle+$ContainerOffsetx+10y" end="_End+10y" edge="End" />
+    </g>
+  </connections>
+  <render>
+    <g conditions="$Pins==8">
+      <rect x="_Middle-$ContainerOffset" y="_Middle-10" width="$ContainerWidth" height="50" />
+    </g>
+    <g conditions="$Pins==10">
+      <rect x="_Middle-$ContainerOffset" y="_Middle-10" width="$ContainerWidth" height="60" />
+    </g>
+    <g conditions="$Pins==12">
+      <rect x="_Middle-$ContainerOffset" y="_Middle-10" width="$ContainerWidth" height="70" />
+    </g>
+    <g conditions="$Pins==14">
+      <rect x="_Middle-$ContainerOffset" y="_Middle-10" width="$ContainerWidth" height="80" />
+    </g>
+    <g conditions="$Pins==16">
+      <rect x="_Middle-$ContainerOffset" y="_Middle-10" width="$ContainerWidth" height="90" />
+    </g>
+
+    <g conditions="$Header">
+      <text x="_Middle" y="_Middle-20" align="CentreCentre" value="$Header" />
+    </g>
+
+    <g conditions="$Pin1|$Label1">
+      <line start="_Start+0y" end="_Middle-$ContainerOffsetx+0y" />
+      <text x="_Middle-$PinOffset" y="_Middle" align="CentreLeft" value="$Pin1" size="sm" />
+      <text x="_Middle-$LabelOffset" y="_Middle+-2" align="BottomRight" value="$Label1" size="xxs" />
+    </g>
+
+    <g conditions="$Pin2|$Label2">
+      <line start="_Middle+$ContainerOffsetx+0y" end="_End+0y" />
+      <text x="_Middle+$PinOffset" y="_Middle" align="CentreRight" value="$Pin2" size="sm" />
+      <text x="_Middle+$LabelOffset" y="_Middle+-2" align="BottomLeft" value="$Label2" size="xxs" />
+    </g>
+
+    <g conditions="$Pin3|$Label3">
+      <line start="_Start+10y" end="_Middle-$ContainerOffsetx+10y" />
+      <text x="_Middle-$PinOffset" y="_Middle+10" align="CentreLeft" value="$Pin3" size="sm" />
+      <text x="_Middle-$LabelOffset" y="_Middle+8" align="BottomRight" value="$Label3" size="xxs" />
+    </g>
+
+    <g conditions="$Pin4|$Label4">
+      <line start="_Middle+$ContainerOffsetx+10y" end="_End+10y" />
+      <text x="_Middle+$PinOffset" y="_Middle+10" align="CentreRight" value="$Pin4" size="sm" />
+      <text x="_Middle+$LabelOffset" y="_Middle+8" align="BottomLeft" value="$Label4" size="xxs" />
+    </g>
+
+    
+
+  </render>
+
+</component>
